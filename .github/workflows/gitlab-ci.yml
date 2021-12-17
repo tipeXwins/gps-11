@@ -29,7 +29,10 @@ jobs:
           pip install pylint
           pylint main.py
 
-      - name: Test with pytest
+      - name: Test with test.py
         run: |
           python test.py
+      - name: Coverage of test
+        run: |
+          coverage run -m test.py
           
