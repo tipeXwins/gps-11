@@ -35,5 +35,6 @@ jobs:
       - name: Coverage of test
         run: |
           pip install coverage
-          coverage run -m test.py
+          coverage run -m test.py main.py
+          coverage report -m
           
